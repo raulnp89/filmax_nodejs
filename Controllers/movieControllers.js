@@ -40,4 +40,14 @@ const getAllMovies = async (req, res) => {
   }
 };
 
-module.exports = { addNewMovie, getAllMovies };
+const getMovieById = async (req, res) => {
+  try {
+    const movieId = req.params.id;
+    const movie = await movieModel.findById(movieId);
+    res.status(200).json({ status: "Success", movie });
+  } catch (error) {
+    res.status(500).json({ status: "No se encontró la película" });
+  }
+};
+
+module.exports = { addNewMovie, getAllMovies, getMovieById };

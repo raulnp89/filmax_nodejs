@@ -24,6 +24,7 @@ const movieSchema = new Schema({
       "Documentary",
       "Animated-film",
       "Crime",
+      "Fantasy",
     ],
   },
   director: {

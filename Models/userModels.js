@@ -18,7 +18,6 @@ const userSchema = new Schema({
     required: [true, "La contraseña es obligatoria"],
     trim: true,
     minLength: 4,
-    maxLength: 8,
   },
   role: {
     type: String,

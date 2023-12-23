@@ -5,8 +5,14 @@ const PORT = 3000;
 const userRouter = require("./Router/userRouter");
 const movieRouter = require("./Router/movieRouter");
 
+const swaggerUI = require("swagger-ui-express");
+const swaggerJSDoc = require("./Swagger/swaggerConfig");
+
 const app = express();
 app.use(express.json());
+
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSDoc));
+
 
 require("dotenv").config();
 
