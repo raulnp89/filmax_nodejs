@@ -11,9 +11,6 @@ const swaggerJSDoc = require("./Swagger/swaggerConfig");
 const app = express();
 app.use(express.json());
 
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSDoc));
-
-
 require("dotenv").config();
 
 const url_mongo = process.env.DATABASE_URL;
@@ -36,6 +33,7 @@ db.on("disconected", () => {
 app.use("/Users", userRouter);
 app.use("/Movies", movieRouter);
 
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJSDoc));
 app.listen(PORT, () => {
   console.log(`Server running http://localhost:${PORT}`);
 });

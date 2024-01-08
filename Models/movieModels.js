@@ -25,6 +25,9 @@ const movieSchema = new Schema({
       "Animated-film",
       "Crime",
       "Fantasy",
+      "War",
+      "Musical",
+      "Romance",
     ],
   },
   director: {
