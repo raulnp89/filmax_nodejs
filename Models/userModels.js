@@ -25,9 +25,7 @@ const userSchema = new Schema({
     enum: ["user", "admin"],
     default: "user",
   },
-  favorites: {
-    type: [String],
-  },
+  favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Movies" }],
 });
 
 const user = mongoose.model("User", userSchema, "Users");

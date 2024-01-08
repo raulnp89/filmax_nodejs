@@ -147,15 +147,22 @@ router.delete("/:id", deleteMovies);
  * @swagger
  * /Movies/{:id}:
  *   patch:
- *     summary: Modifica una película
- *     description: Modifica una película con la información proporcionada.
+ *     summary: Actualiza la película seleccionada
+ *     description: Actualiza una película por su ID
  *     requestBody:
  *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
+ *     content:
+ *       application/json:
+ *     schema:
+ *       type: object
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID de la película a actualizar.
+ *         schema:
+ *           type: object
+ *           properties:
  *               title:
  *                 type: string
  *               description:
@@ -174,19 +181,9 @@ router.delete("/:id", deleteMovies);
  *                 type: string
  *               createdAt:
  *                 type: string
- *             example:
- *               title: Título de la película
- *               description: Descripción de la película
- *               category: Género de la película
- *               director: Director de la película
- *               rating: Nota de la película
- *               posterUrl: URL del poster
- *               trailerUrl: URL del trailer
- *               year: Año de la película
- *               createdAt: Fecha de creación en la base de datos
  *     responses:
- *       201:
- *         description: Película añadida correctamente.
+ *       200:
+ *         description: Película actualizada correctamente
  *       400:
  *         description: Error en la solicitud, verifique los datos enviados.
  */

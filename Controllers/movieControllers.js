@@ -128,7 +128,7 @@ const patchMovies = async (req, res) => {
     if (year) {
       movie.year = year;
     }
-    await movie.save;
+    await movie.save();
     res
       .status(200)
       .json({ status: "La película se ha actualizado correctamente" });
@@ -139,6 +139,12 @@ const patchMovies = async (req, res) => {
   }
 };
 
+const addFavorite = async (req, res) => {
+  try {
+    const movieId = req.params.id;
+  } catch (error) {}
+};
+
 module.exports = {
   addNewMovie,
   getAllMovies,
@@ -147,4 +153,5 @@ module.exports = {
   recentMovies,
   deleteMovies,
   patchMovies,
+  addFavorite,
 };

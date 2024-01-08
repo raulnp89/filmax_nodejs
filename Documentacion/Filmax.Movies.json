@@ -1,0 +1,262 @@
+[{
+  "_id": {
+    "$oid": "659c17f1c7a82e5027d39c4c"
+  },
+  "title": "Inception",
+  "description": "A mind-bending heist movie that explores the concept of dreams within dreams.",
+  "category": [
+    "Science-fiction",
+    "Action",
+    "Thriller"
+  ],
+  "director": "Christopher Nolan",
+  "rating": "9.3",
+  "posterUrl": "https://example.com/posters/inception.jpg",
+  "trailerUrl": "https://example.com/trailers/inception.mp4",
+  "year": "2010",
+  "createdAt": {
+    "$date": "2024-01-08T15:42:41.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c180cc7a82e5027d39c4f"
+  },
+  "title": "The Dark Knight",
+  "description": "A gripping crime drama that follows Batman's battle against the Joker in Gotham City.",
+  "category": [
+    "Action",
+    "Crime",
+    "Drama"
+  ],
+  "director": "Christopher Nolan",
+  "rating": "9.0",
+  "posterUrl": "https://example.com/posters/dark_knight.jpg",
+  "trailerUrl": "https://example.com/trailers/dark_knight.mp4",
+  "year": "2008",
+  "createdAt": {
+    "$date": "2024-01-08T15:43:08.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c182cc7a82e5027d39c51"
+  },
+  "title": "Interstellar",
+  "description": "A space odyssey that explores the survival of humanity and the mysteries of the cosmos.",
+  "category": [
+    "Science-fiction",
+    "Drama"
+  ],
+  "director": "Christopher Nolan",
+  "rating": "8.6",
+  "posterUrl": "https://example.com/posters/interstellar.jpg",
+  "trailerUrl": "https://example.com/trailers/interstellar.mp4",
+  "year": "2014",
+  "createdAt": {
+    "$date": "2024-01-08T15:43:40.073Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c1884c7a82e5027d39c53"
+  },
+  "title": "Pulp Fiction",
+  "description": "A nonlinear crime film that weaves multiple interconnected stories of crime and redemption.",
+  "category": [
+    "Crime",
+    "Drama"
+  ],
+  "director": "Quentin Tarantino",
+  "rating": "8.9",
+  "posterUrl": "https://example.com/posters/pulp_fiction.jpg",
+  "trailerUrl": "https://example.com/trailers/pulp_fiction.mp4",
+  "year": "1994",
+  "createdAt": {
+    "$date": "2024-01-08T15:45:08.969Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c1890c7a82e5027d39c55"
+  },
+  "title": "Avatar",
+  "description": "An epic science-fiction film set on the alien world of Pandora, exploring themes of nature and exploitation.",
+  "category": [
+    "Science-fiction",
+    "Adventure"
+  ],
+  "director": "James Cameron",
+  "rating": "7.8",
+  "posterUrl": "https://example.com/posters/avatar.jpg",
+  "trailerUrl": "https://example.com/trailers/avatar.mp4",
+  "year": "2009",
+  "createdAt": {
+    "$date": "2024-01-08T15:45:20.682Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c189ac7a82e5027d39c57"
+  },
+  "title": "The Godfather",
+  "description": "A crime epic that chronicles the Corleone family's rise to power in the world of organized crime.",
+  "category": [
+    "Crime",
+    "Drama"
+  ],
+  "director": "Francis Ford Coppola",
+  "rating": "9.1",
+  "posterUrl": "https://example.com/posters/godfather.jpg",
+  "trailerUrl": "https://example.com/trailers/godfather.mp4",
+  "year": "1972",
+  "createdAt": {
+    "$date": "2024-01-08T15:45:30.171Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c18a2c7a82e5027d39c59"
+  },
+  "title": "Forrest Gump",
+  "description": "A heartwarming tale of a man with a low IQ who inadvertently influences several defining historical events.",
+  "category": [
+    "Drama",
+    "Comedy"
+  ],
+  "director": "Robert Zemeckis",
+  "rating": "8.8",
+  "posterUrl": "https://example.com/posters/forrest_gump.jpg",
+  "trailerUrl": "https://example.com/trailers/forrest_gump.mp4",
+  "year": "1994",
+  "createdAt": {
+    "$date": "2024-01-08T15:45:38.962Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c18aac7a82e5027d39c5b"
+  },
+  "title": "The Matrix",
+  "description": "A groundbreaking science-fiction film that explores the nature of reality and artificial intelligence.",
+  "category": [
+    "Science-fiction",
+    "Action"
+  ],
+  "director": "The Wachowskis",
+  "rating": "8.7",
+  "posterUrl": "https://example.com/posters/matrix.jpg",
+  "trailerUrl": "https://example.com/trailers/matrix.mp4",
+  "year": "1999",
+  "createdAt": {
+    "$date": "2024-01-08T15:45:46.729Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c18b8c7a82e5027d39c5d"
+  },
+  "title": "Jurassic Park",
+  "description": "A thrilling adventure film that brings dinosaurs back to life in an island theme park.",
+  "category": [
+    "Adventure",
+    "Science-fiction"
+  ],
+  "director": "Steven Spielberg",
+  "rating": "8.1",
+  "posterUrl": "https://example.com/posters/jurassic_park.jpg",
+  "trailerUrl": "https://example.com/trailers/jurassic_park.mp4",
+  "year": "1993",
+  "createdAt": {
+    "$date": "2024-01-08T15:46:00.777Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c18ef67b84360e2a9c0b5"
+  },
+  "title": "Inglourious Basterds",
+  "description": "A World War II film that follows a group of Jewish-American soldiers on a mission to assassinate Nazi leaders.",
+  "category": [
+    "War",
+    "Drama"
+  ],
+  "director": "Quentin Tarantino",
+  "rating": "8.3",
+  "posterUrl": "https://example.com/posters/inglourious_basterds.jpg",
+  "trailerUrl": "https://example.com/trailers/inglourious_basterds.mp4",
+  "year": "2009",
+  "createdAt": {
+    "$date": "2024-01-08T15:46:55.632Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c18fa67b84360e2a9c0b7"
+  },
+  "title": "The Social Network",
+  "description": "A biographical drama depicting the founding and rise of Facebook and the resulting legal battles.",
+  "category": [
+    "Drama"
+  ],
+  "director": "David Fincher",
+  "rating": "7.7",
+  "posterUrl": "https://example.com/posters/social_network.jpg",
+  "trailerUrl": "https://example.com/trailers/social_network.mp4",
+  "year": "2010",
+  "createdAt": {
+    "$date": "2024-01-08T15:47:06.250Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c1a948e1bcac806cee868"
+  },
+  "title": "The Grand Budapest Hotel",
+  "description": "A whimsical comedy that follows the adventures of a hotel concierge and his protege.",
+  "category": [
+    "Comedy",
+    "Adventure"
+  ],
+  "director": "Wes Anderson",
+  "rating": "8.1",
+  "posterUrl": "https://example.com/posters/grand_budapest_hotel.jpg",
+  "trailerUrl": "https://example.com/trailers/grand_budapest_hotel.mp4",
+  "year": "2014",
+  "createdAt": {
+    "$date": "2024-01-08T15:53:56.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659c1b3a1f53795dbc650425"
+  },
+  "title": "La La Land",
+  "description": "A romantic musical that follows the love story of a jazz musician and an aspiring actress in Los Angeles.",
+  "category": [
+    "Musical",
+    "Drama",
+    "Romance"
+  ],
+  "director": "Damien Chazelle",
+  "rating": "8.0",
+  "posterUrl": "https://example.com/posters/la_la_land.jpg",
+  "trailerUrl": "https://example.com/trailers/la_la_land.mp4",
+  "year": "2016",
+  "createdAt": {
+    "$date": "2024-01-08T15:56:42.811Z"
+  },
+  "__v": 0
+}]
