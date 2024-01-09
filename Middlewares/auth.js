@@ -19,4 +19,26 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-module.exports = verifyToken;
+const refreshToken = async (req, res) => {
+  if (!req.user) {
+    return res.status(401).json({ error: "Acceso denegado" });
+  }
+  const user = {
+    userId: req.user.id,
+    email: req.user.email,
+    role: req.user.role,
+  };
+  const token = generateToken(user, false);
+  const refreshToken = generateToken(user, true);
+
+  res.status(200).json({
+    status: "succeeded",
+    data: {
+      token,
+      refreshToken,
+    },
+    error: null,
+  });
+};
+
+module.exports = { verifyToken, refreshToken };

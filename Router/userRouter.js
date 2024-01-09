@@ -1,6 +1,7 @@
 const { signUp, login } = require("../Controllers/userControllers");
 const verifyToken = require("../Middlewares/auth");
 const router = require("express").Router();
+const generateToken = require("../Utils/utils");
 
 /**
  * @swagger
@@ -32,6 +33,7 @@ const router = require("express").Router();
  *         description: Error en la solicitud, verifique los datos enviados.
  */
 router.post("/signUp", signUp);
+
 router.post("/login", login);
 
 module.exports = router;
