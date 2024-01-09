@@ -1,121 +1,131 @@
-[{
-  "_id": {
-    "$oid": "6587186dfdb0cfa5c60df6f7"
+[
+  {
+    "_id": {
+      "$oid": "6587186dfdb0cfa5c60df6f7"
+    },
+    "name": "Raúl",
+    "email": "rnavasperez@gmail.com",
+    "password": "$2b$10$4ZiFR9FiUCTiO6SJJeMZ6OAUgUV6QGAdpAlTzbsKgCd02awBfXDIC",
+    "role": "admin",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Raúl",
-  "email": "rnavasperez@gmail.com",
-  "password": "$2b$10$4ZiFR9FiUCTiO6SJJeMZ6OAUgUV6QGAdpAlTzbsKgCd02awBfXDIC",
-  "role": "admin",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871c3dd4f9076d99720c0d"
+  {
+    "_id": {
+      "$oid": "65871c3dd4f9076d99720c0d"
+    },
+    "name": "Juan Pérez",
+    "email": "juan.perez@example.com",
+    "password": "$2b$10$v4DXjAQMPEZNf/NwAiVe9Op9X47j3D2z0cTjFTTMuAlGDVs9Y3386",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Juan Pérez",
-  "email": "juan.perez@example.com",
-  "password": "$2b$10$v4DXjAQMPEZNf/NwAiVe9Op9X47j3D2z0cTjFTTMuAlGDVs9Y3386",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871c6dd4f9076d99720c0f"
+  {
+    "_id": {
+      "$oid": "65871c6dd4f9076d99720c0f"
+    },
+    "name": "María García",
+    "email": "maria.garcia@example.com",
+    "password": "$2b$10$yWKOIvDRouqz4GMiAVyEdu6pjl8pr2XlpwZpS69MEkqtNzdpk96ja",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "María García",
-  "email": "maria.garcia@example.com",
-  "password": "$2b$10$yWKOIvDRouqz4GMiAVyEdu6pjl8pr2XlpwZpS69MEkqtNzdpk96ja",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871c7dd4f9076d99720c11"
+  {
+    "_id": {
+      "$oid": "65871c7dd4f9076d99720c11"
+    },
+    "name": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@example.com",
+    "password": "$2b$10$93LVSuQ9A0UuAKzMgxg/iuqd176eVOW8jq8kQGbe7IqhHpylErkxO",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Carlos Rodríguez",
-  "email": "carlos.rodriguez@example.com",
-  "password": "$2b$10$93LVSuQ9A0UuAKzMgxg/iuqd176eVOW8jq8kQGbe7IqhHpylErkxO",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871c8bd4f9076d99720c13"
+  {
+    "_id": {
+      "$oid": "65871c8bd4f9076d99720c13"
+    },
+    "name": "Laura Sánchez",
+    "email": "laura.sanchez@example.com",
+    "password": "$2b$10$zwPP3apPhr1N.pXeooPubeC5Sjs.m1.gdM.f9sySAtiK6vBhz2FI.",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Laura Sánchez",
-  "email": "laura.sanchez@example.com",
-  "password": "$2b$10$zwPP3apPhr1N.pXeooPubeC5Sjs.m1.gdM.f9sySAtiK6vBhz2FI.",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e3a6876f1d9bd67a423"
+  {
+    "_id": {
+      "$oid": "65871e3a6876f1d9bd67a423"
+    },
+    "name": "Alejandro Martínez",
+    "email": "alejandro.martinez@example.com",
+    "password": "$2b$10$3fQe0azaMkY0OIer/acSiez0OW8EQINUO5FxPXsL1VLDMR7/OpScq",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Alejandro Martínez",
-  "email": "alejandro.martinez@example.com",
-  "password": "$2b$10$3fQe0azaMkY0OIer/acSiez0OW8EQINUO5FxPXsL1VLDMR7/OpScq",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e476876f1d9bd67a425"
+  {
+    "_id": {
+      "$oid": "65871e476876f1d9bd67a425"
+    },
+    "name": "Ana López",
+    "email": "ana.lopez@example.com",
+    "password": "$2b$10$wBBS8uqadJWQdaSRk67nsu9yoGI.A8tHhRgtt6338CsG9l2MOXK7K",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Ana López",
-  "email": "ana.lopez@example.com",
-  "password": "$2b$10$wBBS8uqadJWQdaSRk67nsu9yoGI.A8tHhRgtt6338CsG9l2MOXK7K",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e506876f1d9bd67a427"
+  {
+    "_id": {
+      "$oid": "65871e506876f1d9bd67a427"
+    },
+    "name": "Sergio Herrera",
+    "email": "sergio.herrera@example.com",
+    "password": "$2b$10$A6aC3YZgpzSkT5QlDstteue8Gwpgj9T.39APZyuhU3orKgqCHEn5O",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Sergio Herrera",
-  "email": "sergio.herrera@example.com",
-  "password": "$2b$10$A6aC3YZgpzSkT5QlDstteue8Gwpgj9T.39APZyuhU3orKgqCHEn5O",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e5d6876f1d9bd67a429"
+  {
+    "_id": {
+      "$oid": "65871e5d6876f1d9bd67a429"
+    },
+    "name": "Carmen Vargas",
+    "email": "carmen.vargas@example.com",
+    "password": "$2b$10$fI5zVZ.nMBLiQcHjBkyYUeuKmjaCLXCQweDrzq677YuU2Szfhfbhi",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Carmen Vargas",
-  "email": "carmen.vargas@example.com",
-  "password": "$2b$10$fI5zVZ.nMBLiQcHjBkyYUeuKmjaCLXCQweDrzq677YuU2Szfhfbhi",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e676876f1d9bd67a42b"
+  {
+    "_id": {
+      "$oid": "65871e676876f1d9bd67a42b"
+    },
+    "name": "Javier Flores",
+    "email": "javier.flores@example.com",
+    "password": "$2b$10$DWejuN2Ajq2zpKSvMkxF0eOLUMQ7Rfbkj2/UrZNOrCrGsV5ScuosK",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Javier Flores",
-  "email": "javier.flores@example.com",
-  "password": "$2b$10$DWejuN2Ajq2zpKSvMkxF0eOLUMQ7Rfbkj2/UrZNOrCrGsV5ScuosK",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65871e756876f1d9bd67a42d"
+  {
+    "_id": {
+      "$oid": "65871e756876f1d9bd67a42d"
+    },
+    "name": "Isabel González",
+    "email": "isabel.gonzalez@example.com",
+    "password": "$2b$10$XAT/HpbUcW94YNf1GwQ10udjKg4o7BtzfInfhs6zks/knoJsb/iVm",
+    "role": "user",
+    "favorites": [],
+    "__v": 0
   },
-  "name": "Isabel González",
-  "email": "isabel.gonzalez@example.com",
-  "password": "$2b$10$XAT/HpbUcW94YNf1GwQ10udjKg4o7BtzfInfhs6zks/knoJsb/iVm",
-  "role": "user",
-  "favorites": [],
-  "__v": 0
-}]
+
+  {
+    "name": "Carlos Rodríguez",
+    "email": "carlos.rodriguezzzz@example.com",
+    "password": "1234",
+    "role": "user",
+    "favorites": []
+  }
+]

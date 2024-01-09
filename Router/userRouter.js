@@ -1,7 +1,15 @@
-const { signUp, login } = require("../Controllers/userControllers");
-const verifyToken = require("../Middlewares/auth");
+const {
+  signUp,
+  login,
+  addFavorite,
+  showFavorites,
+  deleteFavorite,
+} = require("../Controllers/userControllers");
+
+const { verifyToken } = require("../Middlewares/auth");
 const router = require("express").Router();
-const generateToken = require("../Utils/utils");
+
+router.get("/showFavorites", verifyToken, showFavorites);
 
 /**
  * @swagger
@@ -35,5 +43,6 @@ const generateToken = require("../Utils/utils");
 router.post("/signUp", signUp);
 
 router.post("/login", login);
-
+router.patch("/:id/addFavorite", verifyToken, addFavorite);
+router.patch("/:id/deleteFavorite", verifyToken, deleteFavorite);
 module.exports = router;

@@ -8,7 +8,7 @@ const {
   patchMovies,
 } = require("../Controllers/movieControllers");
 
-const verifyToken = require("../Middlewares/auth");
+const { verifyToken, verifyAdmin } = require("../Middlewares/auth");
 const router = require("express").Router();
 
 /**
@@ -86,7 +86,7 @@ router.get("/mostPopular", mostPopular);
  *       400:
  *         description: Error en la solicitud, verifique los datos enviados.
  */
-router.post("/addNewMovie", addNewMovie);
+router.post("/addNewMovie", verifyAdmin, addNewMovie);
 
 /**
  * @swagger
@@ -141,7 +141,7 @@ router.get("/:id", getMovieById);
  *       400:
  *         description: Error en la solicitud, verifique los datos enviados.
  */
-router.delete("/:id", deleteMovies);
+router.delete("/:id", verifyAdmin, deleteMovies);
 
 /**
  * @swagger
@@ -187,5 +187,5 @@ router.delete("/:id", deleteMovies);
  *       400:
  *         description: Error en la solicitud, verifique los datos enviados.
  */
-router.patch("/:id", patchMovies);
+router.patch("/:id", verifyAdmin, patchMovies);
 module.exports = router;

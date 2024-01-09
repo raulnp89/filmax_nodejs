@@ -1,6 +1,7 @@
 const movieModel = require("../Models/movieModels");
 
 const addNewMovie = async (req, res) => {
+  console.log(req.user);
   try {
     const {
       title,
@@ -139,12 +140,6 @@ const patchMovies = async (req, res) => {
   }
 };
 
-const addFavorite = async (req, res) => {
-  try {
-    const movieId = req.params.id;
-  } catch (error) {}
-};
-
 module.exports = {
   addNewMovie,
   getAllMovies,
@@ -153,5 +148,4 @@ module.exports = {
   recentMovies,
   deleteMovies,
   patchMovies,
-  addFavorite,
 };
