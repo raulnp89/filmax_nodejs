@@ -1,0 +1,227 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Filmax",
+    "dateExported": "2024-01-09T19:26:04.182Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "75cbbbb1-4507-4450-bd6f-e7d0d0a4480e",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Añadir una pelicula",
+            "url": "http://localhost:3000/Movies/addNewMovie",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-08T15:56:55.407Z",
+            "modified": "2024-01-09T16:25:33.395Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODE2OTgzLCJleHAiOjE3MDQ4MjU5ODN9.nTKJVpOhWwXOZZ_tv5u2r84YgeiY6pMCvuzDmN5_CoI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"The Shawshank Redemption\",\n  \"description\": \"A tale of hope and friendship in the backdrop of a high-security prison.\",\n  \"category\": [\"Drama\"],\n  \"director\": \"Frank Darabont\",\n  \"rating\": \"9.3\",\n  \"posterUrl\": \"https://example.com/posters/shawshank_redemption.jpg\",\n  \"trailerUrl\": \"https://example.com/trailers/shawshank_redemption.mp4\",\n  \"year\": \"1994\",\n  \"createdAt\": \"2024-01-08T15:45:00Z\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ab8e11be-47d5-4d64-ab46-0ab606d68df5",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Obtener todas las peliculas",
+            "url": "http://localhost:3000/Movies/getAllMovies",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-08T15:57:40.631Z",
+            "modified": "2024-01-08T16:59:05.606Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"La La Land\",\n  \"description\": \"A romantic musical that follows the love story of a jazz musician and an aspiring actress in Los Angeles.\",\n  \"category\": [\"Musical\", \"Drama\", \"Romance\"],\n  \"director\": \"Damien Chazelle\",\n  \"rating\": \"8.0\",\n  \"posterUrl\": \"https://example.com/posters/la_la_land.jpg\",\n  \"trailerUrl\": \"https://example.com/trailers/la_la_land.mp4\",\n  \"year\": \"2016\",\n  \"createdAt\": \"2024-01-08T15:15:00Z\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f05b0ad-6959-41c1-8dc8-b5b42d77fbc9",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Busqueda de pelicula por id",
+            "url": "http://localhost:3000/Movies/659c18fa67b84360e2a9c0b7",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-08T15:59:24.055Z",
+            "modified": "2024-01-08T15:59:24.055Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "587825ee-7b14-4692-ad8f-6979af9e761d",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Most Popular Movies",
+            "url": "http://localhost:3000/Movies/mostPopular",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-08T17:42:32.069Z",
+            "modified": "2024-01-08T17:42:32.069Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "44f2834e-a391-4be7-a96a-634af3e0e133",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Peliculas mas recientes",
+            "url": "http://localhost:3000/Movies/recentMovies",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-08T17:53:00.604Z",
+            "modified": "2024-01-08T17:53:00.604Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "46b5a7f1-04a4-43f4-9079-18bdd77dd1be",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Eliminar una pelicula",
+            "url": "http://localhost:3000/Movies/659d72281e9f16325751787d",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-01-08T18:38:18.772Z",
+            "modified": "2024-01-09T16:44:12.735Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODE2OTgzLCJleHAiOjE3MDQ4MjU5ODN9.nTKJVpOhWwXOZZ_tv5u2r84YgeiY6pMCvuzDmN5_CoI"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f2162f1a-2c54-4c14-9be6-d44fb663990e",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Actualizar Pelicula",
+            "url": "http://localhost:3000/Movies/659c17f1c7a82e5027d39c4c",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2024-01-08T19:13:51.450Z",
+            "modified": "2024-01-08T19:13:51.450Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Origen\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "443a9e21-c953-48c9-b234-dd3091d61ebe",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "User Login",
+            "url": "http://localhost:3000/Users/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-09T16:12:08.431Z",
+            "modified": "2024-01-09T16:16:23.236Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"email\": \"rnavasperez@gmail.com\",\n \"password\": \"123456\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3eabd09b-27d9-47ef-9b93-fda3912f7a9d",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "User Sign Up",
+            "url": "http://localhost:3000/Users/signUp",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-01-09T16:14:53.687Z",
+            "modified": "2024-01-09T16:14:53.687Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Carlos Rodríguez\",\r\n  \"email\": \"carlos.rodriguezzzz@example.com\",\r\n  \"password\": \"1234\",\r\n  \"role\": \"user\",\r\n  \"favorites\": []\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b91cf3b5-388e-437f-968e-7c0a4e9e3981",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Add to Favorites",
+            "url": "http://localhost:3000/Users/659c18ef67b84360e2a9c0b5/addFavorite",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2024-01-09T18:06:04.955Z",
+            "modified": "2024-01-09T18:48:56.020Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODIxNjk4LCJleHAiOjE3MDQ4MzA2OTh9.8d-VPzCC9kXDTCAaOBIuCku4lhSo-8KgrXLCwxU505Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1d03f66c-d553-4241-86d5-aed82b4832cb",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Show Favorites",
+            "url": "http://localhost:3000/Users/showFavorites",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-01-09T18:36:13.348Z",
+            "modified": "2024-01-09T18:36:13.348Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODIxNjk4LCJleHAiOjE3MDQ4MzA2OTh9.8d-VPzCC9kXDTCAaOBIuCku4lhSo-8KgrXLCwxU505Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d83e8d0b-90e0-4396-9064-84b33956022a",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Eliminar de favoritos",
+            "url": "http://localhost:3000/Users/659c182cc7a82e5027d39c51/deleteFavorite",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-01-09T19:09:32.649Z",
+            "modified": "2024-01-09T19:09:32.649Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODIxNjk4LCJleHAiOjE3MDQ4MzA2OTh9.8d-VPzCC9kXDTCAaOBIuCku4lhSo-8KgrXLCwxU505Q"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
