@@ -6,10 +6,26 @@ const {
   recentMovies,
   deleteMovies,
   patchMovies,
+  avgRatingMovies,
+  movieToPdf,
 } = require("../Controllers/movieControllers");
 
 const { verifyToken, verifyAdmin } = require("../Middlewares/auth");
 const router = require("express").Router();
+
+/**
+ * @swagger
+ * /Movies/avgRatingMovies:
+ *   get:
+ *     summary: Obtiene la media de las peliculas
+ *     description: Obtiene la valoración media de todas las películas en la base de datos
+ *     responses:
+ *       200:
+ *         description: Valoración media obtenida correctamente
+ *       400:
+ *         description: Error en la solicitud, verifique los datos enviados.
+ */
+router.get("/avgRatingMovies", avgRatingMovies);
 
 /**
  * @swagger
@@ -124,6 +140,27 @@ router.get("/:id", getMovieById);
 
 /**
  * @swagger
+ * /Movies/{id}/movieToPdf:
+ *   get:
+ *     summary: Genera un archivo PDF de la película
+ *     description: Genera un PDF del detalle de la película proporcionada por ID.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: ID de la película a obtener.
+ *         schema:
+ *           type: string
+ *     responses:
+ *       201:
+ *         description: Película obtenida correctamente.
+ *       400:
+ *         description: Error en la solicitud, verifique los datos enviados.
+ */
+router.get("/:id/movieToPdf", movieToPdf);
+
+/**
+ * @swagger
  * /Movies/{:id}:
  *   delete:
  *     summary: Elimina la película seleccionada
@@ -145,24 +182,24 @@ router.delete("/:id", verifyAdmin, deleteMovies);
 
 /**
  * @swagger
- * /Movies/{:id}:
+ * /Movies/patchMovies:
  *   patch:
- *     summary: Actualiza la película seleccionada
- *     description: Actualiza una película por su ID
- *     requestBody:
- *       required: true
- *     content:
- *       application/json:
- *     schema:
- *       type: object
+ *     summary: Actualiza los datos de un usuario
+ *     description: Actualiza un usuario con la información proporcionada.
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
- *         description: ID de la película a actualizar.
+ *         description: ID de la pelicula a actualizar.
  *         schema:
- *           type: object
- *           properties:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
  *               title:
  *                 type: string
  *               description:
@@ -181,9 +218,19 @@ router.delete("/:id", verifyAdmin, deleteMovies);
  *                 type: string
  *               createdAt:
  *                 type: string
+ *             example:
+ *               title: Título de la película
+ *               description: Descripción de la película
+ *               category: Género de la película
+ *               director: Director de la película
+ *               rating: Nota de la película
+ *               posterUrl: URL del poster
+ *               trailerUrl: URL del trailer
+ *               year: Año de la película
+ *               createdAt: Fecha de creación en la base de datos
  *     responses:
- *       200:
- *         description: Película actualizada correctamente
+ *       201:
+ *         description: Usuario creado correctamente.
  *       400:
  *         description: Error en la solicitud, verifique los datos enviados.
  */

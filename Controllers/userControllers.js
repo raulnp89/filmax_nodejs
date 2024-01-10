@@ -1,18 +1,53 @@
 const userModel = require("../Models/userModels");
 const movieModel = require("../Models/movieModels");
 const bcrypt = require("bcrypt");
-const { verifyToken, refreshToken } = require("../Middlewares/auth");
+const emailService = require("../Utils/emailServices");
 const jwt = require("jsonwebtoken");
+
+const updateUser = async (req, res) => {
+  try {
+    const userId = req.params.id;
+    const { name, email, password, role } = req.body;
+    const user = await userModel.findById(userId);
+    if (!user) {
+      return res.status(404).send("El usuario no existe");
+    }
+    if (name) {
+      user.name = name;
+    }
+    if (email) {
+      user.email = email;
+    }
+    if (password) {
+      user.password = password;
+    }
+    if (role) {
+      user.role = role;
+    }
+    await user.save();
+    res
+      .status(200)
+      .json({ status: "El usuario se ha actualizado correctamente" });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ status: "failed", product: null, error: error.message });
+  }
+};
 
 const signUp = async (req, res) => {
   try {
+    const { name, email, password, role } = req.body;
     const newUser = new userModel({
-      name: req.body.name,
-      email: req.body.email,
+      name,
+      email,
       password: await bcrypt.hash(req.body.password, 10),
-      role: req.body.role,
+      role,
     });
     await newUser.save();
+    const subject = `Nuevo registro de usuario`;
+    const html = `<h1>El usuario ${newUser.name} se ha registrado correctamente</h1>`;
+    await emailService.sendEmail(email, subject, html);
     res.status(201).json({
       status: "Success",
       message: "Usuario creado correctamente",
@@ -145,4 +180,5 @@ module.exports = {
   addFavorite,
   showFavorites,
   deleteFavorite,
+  updateUser,
 };

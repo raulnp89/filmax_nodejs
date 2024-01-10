@@ -1,4 +1,5 @@
 const movieModel = require("../Models/movieModels");
+const PDFDocument = require("pdfkit");
 
 const addNewMovie = async (req, res) => {
   console.log(req.user);
@@ -140,6 +141,73 @@ const patchMovies = async (req, res) => {
   }
 };
 
+const avgRatingMovies = async (req, res) => {
+  try {
+    const movie = await movieModel.aggregate([
+      {
+        $addFields: {
+          ratingNumeric: { $toDouble: "$rating" }, // Convierte el campo rating a tipo numérico
+        },
+      },
+      {
+        $group: {
+          _id: null,
+          mediaRating: { $avg: "$ratingNumeric" },
+        },
+      },
+    ]);
+    const roundedRating = parseFloat(movie[0].mediaRating.toFixed(2));
+    console.log(movie);
+    res.status(200).json({
+      status: `La valoracion media de todas las películas es: ${parseFloat(
+        roundedRating.toFixed(2)
+      )}`,
+    });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ status: "failed", product: null, error: error.message });
+  }
+};
+
+const movieToPdf = async (req, res) => {
+  try {
+    const movieId = req.params.id;
+    const movie = await movieModel.findById(movieId);
+    const doc = new PDFDocument();
+
+    const buffers = [];
+    doc.on("data", (chunk) => buffers.push(chunk));
+
+    doc.fontSize(20).text(`${movie.title}`, { align: "center" });
+    doc.moveDown();
+    doc.moveDown();
+    doc.text(`Descripción: ${movie.description}`);
+    doc.moveDown();
+    doc.text(`Género: ${movie.category}`);
+    doc.moveDown();
+    doc.text(`Director: ${movie.director}`);
+    doc.moveDown();
+    doc.text(`Rating: ${movie.rating}`);
+    doc.moveDown();
+
+    doc.text(`Año: ${movie.year}`);
+
+    doc.moveDown();
+
+    doc.on("end", () => {
+      const pdfBuffer = Buffer.concat(buffers);
+      res.setHeader("Content-Type", "application/pdf");
+      res.status(200).send(pdfBuffer);
+    });
+    doc.end();
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Error al generar el PDF", error: error.message });
+  }
+};
+
 module.exports = {
   addNewMovie,
   getAllMovies,
@@ -148,4 +216,6 @@ module.exports = {
   recentMovies,
   deleteMovies,
   patchMovies,
+  avgRatingMovies,
+  movieToPdf,
 };
