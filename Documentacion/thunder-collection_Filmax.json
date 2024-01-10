@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Filmax",
-    "dateExported": "2024-01-09T19:26:04.182Z",
+    "dateExported": "2024-01-10T19:18:15.111Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -137,12 +137,12 @@
             "method": "POST",
             "sortNum": 80000,
             "created": "2024-01-09T16:12:08.431Z",
-            "modified": "2024-01-09T16:16:23.236Z",
+            "modified": "2024-01-10T15:41:23.403Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n \"email\": \"rnavasperez@gmail.com\",\n \"password\": \"123456\"\n  \n}",
+                "raw": "{\n \"email\": \"raulnp89@gmail.com\",\n \"password\": \"123456\"\n  \n}",
                 "form": []
             },
             "tests": []
@@ -220,6 +220,44 @@
                     "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODcxODZkZmRiMGNmYTVjNjBkZjZmNyIsImVtYWlsIjoicm5hdmFzcGVyZXpAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzA0ODIxNjk4LCJleHAiOjE3MDQ4MzA2OTh9.8d-VPzCC9kXDTCAaOBIuCku4lhSo-8KgrXLCwxU505Q"
                 }
             ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93d2886b-65a6-425c-803b-2ca7e7a6aa48",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Update User",
+            "url": "http://localhost:3000/Users/659eb75655a71b53faf414c0/updateUser",
+            "method": "PATCH",
+            "sortNum": 130000,
+            "created": "2024-01-10T15:41:51.795Z",
+            "modified": "2024-01-10T15:41:51.795Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OWViNzU2NTVhNzFiNTNmYWY0MTRjMCIsImVtYWlsIjoicmF1bG5wODlAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDQ5MDEyODMsImV4cCI6MTcwNDkxMDI4M30.W6YzoJSlZQEWLJU7cTZyvMAMSzEzZoAOtXTzmZej9us"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Raúl Navas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c30c43a0-d5bb-475d-b36e-27d395883d82",
+            "colId": "81885ab7-9971-47c0-be07-f471d29a70e8",
+            "containerId": "",
+            "name": "Media Ratings",
+            "url": "http://localhost:3000/Movies/avgRatingMovies",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-01-10T16:15:57.243Z",
+            "modified": "2024-01-10T16:15:57.243Z",
+            "headers": [],
             "params": [],
             "tests": []
         }
